@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    font-family: 'Roboto Condensed', Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 10px;
+    line-height: 1.6;
+
+    background: $main-background;
+}
+
+img { 
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: $dark-color;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    transition: border-color 0.5s ease-in-out;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+    font-family: 'Staatliches', cursive;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.4rem;
+}
+

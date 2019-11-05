@@ -1,0 +1,99 @@
+// CONTAINER
+.container {
+    max-width: $website-width;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+// BUTTONS SHARED
+%btn-shared {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.375rem 1.4rem;
+    transition: all 0.5sec ease-in-out;
+    border: none;
+    border-radius: 3px;
+
+    cursor: pointer;
+}
+
+.btn {
+    &-main {
+        @extend %btn-shared;
+        background-color: $main-color;
+        color: $main-background;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background-color: darken($color: $main-color, $amount: 15%)
+        }
+    }
+
+    &-highlight {
+        @extend %btn-shared;
+        background-color: $highlight-color;
+        color: $main-background;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background-color: darken($color: $highlight-color, $amount: 15%)
+        }
+    }
+
+    &-dark {
+        @extend %btn-shared;
+        background-color: $dark-color;
+        color: $main-background;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background-color: darken($color: $dark-color, $amount: 15%)
+        }
+
+    }
+
+    &-light {
+        @extend %btn-shared;
+        background-color: $main-background;
+        color: $dark-color;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background-color: darken($color: $main-background, $amount: 15%)
+        }
+    }
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.text-lg {
+    font-size: 3rem
+}
+
+.text-md {
+    font-size: 2rem
+}
+
+.text-sm {
+    font-size: 1rem
+}
+
+.mx-1 {
+    margin: 1rem 0;
+}
+
+.mx-2 {
+    margin: 2rem 0;
+}
+
+.mx-3 {
+    margin: 3rem 0;
+}
+
+.center-text {
+    text-align: center;
+}

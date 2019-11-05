@@ -1,27 +1,4 @@
 @import 'variables';
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0; 
-}
-
-body {
-    font-family: 'Roboto Condensed', Verdana, Geneva, Tahoma, sans-serif; 
-    font-size: 10px;
-    line-height: 1.6;
-
-    background: $main-background;
-}
-
-h1, h2, h3, h4, h5, h6, a {
-    font-family: 'Staatliches', cursive;
-}
-
-h1 {
-    font-size: 3rem;
-}
-
-p {
-    font-size: 1.4rem;
-}
+@import 'basestyles';
+@import 'utillities';
+@import 'header';

@@ -1,0 +1,104 @@
+// Main Nav
+#main-nav {
+    position: fixed;
+    width: 100%;
+    padding: 0 1rem;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: $main-background; 
+    color: $dark-color;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+
+        font-size: 1.4rem;
+
+        li {
+            margin: 0 1rem;
+
+            a.current {
+                color: $menu-current;
+            }
+
+            a:hover {
+                // opacity: 0.75;
+                border-color: $menu-current;
+            }
+        }
+    }
+}
+
+// Header Styles
+h1#logo-text {
+    font-size: 2.2rem;
+}
+
+#header {
+    // Header Image
+    position: relative;
+    &-home {
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: $bg-image no-repeat center center/cover;
+        }
+        
+        height: 100vh;
+        background: rgba(14, 21, 31, 0.4);
+        color: #fff;
+
+        // Header Content
+        .header-content {
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+        line-height: 1.4;
+
+        h1 {
+            font-size: 5rem;
+            margin-top: 60px;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .txt {
+                font-size: 3rem;
+                padding: 0;
+                border-right: 3px solid $highlight-color;
+            }
+        
+        }
+
+        p {
+            font-size: 2rem;
+        }
+    }
+    }
+
+    
+
+    // Header Inner
+    &-inner {
+
+    }
+}
+
