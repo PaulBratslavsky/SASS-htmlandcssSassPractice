@@ -1,0 +1,143 @@
+// Home Section
+#home {
+    &-a {
+        min-height: 100vh;
+
+        .section-title {
+            display: inline-block;
+            font-size: 2rem;
+            border-bottom: 4px $highlight-color solid;
+        }
+
+        .specials {
+            display: grid;
+            // grid-gap: 2rem;
+            grid-template-columns: repeat(4, 1fr);
+
+            .special-item {
+                padding: 2rem 0;
+                margin: 1rem;
+                box-shadow: 3px 5px 15px rgba(0,0,0,0.2);
+            }
+
+            .icon-container {
+                background: $highlight-color;
+                color: $main-background;
+
+                height: $icon-container-large;
+                width: $icon-container-large;
+
+                border-radius: 50%;
+                margin: auto;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                font-size: 1.8rem; 
+            }
+
+
+            h3 {
+                font-size: 2rem;
+                margin: 1rem 0;
+                color: $main-color;
+            }
+            
+        }
+    }
+    // MY PROCESS SECTION B
+    &-b {
+        .section-title {
+            display: inline-block;
+            font-size: 2rem;
+            border-bottom: 4px $highlight-color solid;
+        }
+
+        .process {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1.5rem;
+
+            &-icon {
+                position: relative;
+                border-radius: 50%;
+                background: $dark-color;
+                color: $main-background;
+
+                text-align: center;
+
+                height: 110px;
+                width: 110px;
+                line-height: 110px;
+
+                .process-step {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    font-size: 28px;
+
+                    color: $main-background;
+                    background: $highlight-color; 
+    
+                    border-radius: 50%;
+                    height: 40px;
+                    width: 40px;
+                    line-height: 40px;
+                }
+
+
+            }
+
+            div {
+                position: relative;
+                bottom: 0;
+                transition: bottom 0.5s ease-in-out;
+
+            }
+
+            div:hover {
+                bottom: 25px;
+            }
+
+            h3 {
+                font-size: 1.4rem;
+                color: $main-color;
+            }
+           
+       } 
+
+
+
+
+    }
+    // HOME SECTION c
+    &-c {
+        background: $main-color;
+        color: $main-background;
+        padding: 4rem 0;
+        // min-height: 100vh;
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            li {
+                line-height: 2;
+
+                i {
+                    font-size: 3rem;
+                }
+
+                &.stats-title {
+                    font-size: 1.8rem;
+                    margin-top: 1rem;
+                }
+
+                &.stats-number {
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

@@ -66,10 +66,16 @@
 }
 
 .lead {
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    margin: 3rem;
 }
 
+.bottom-line {
+    background: $highlight-color;
+    height: 5px;
+    width: 4rem;
+    margin: auto;
+}
 .text-lg {
     font-size: 3rem
 }
@@ -82,17 +88,43 @@
     font-size: 1rem
 }
 
-.mx-1 {
+.my-1 {
     margin: 1rem 0;
 }
 
-.mx-2 {
+.my-2 {
     margin: 2rem 0;
 }
 
-.mx-3 {
+.my-3 {
     margin: 3rem 0;
 }
+
+.my-4 {
+    margin: 4rem 0;
+}
+
+.py-1 {
+    padding: 1rem 0;
+}
+
+.py-2 {
+    padding: 2rem 0;
+}
+
+.py-3 {
+    padding: 3rem 0;
+}
+
+.py-3-0 {
+    padding: 3rem 0 0 0;
+}
+
+.py-4 {
+    padding: 1rem 0;
+}
+
+
 
 .center-text {
     text-align: center;

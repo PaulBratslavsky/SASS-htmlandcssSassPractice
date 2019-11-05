@@ -29,7 +29,7 @@ ul {
 }
 
 h1, h2, h3, h4, h5, h6, a {
-    font-family: 'Staatliches', cursive;
+    font-family: 'Roboto Condensed', Verdana, Geneva, Tahoma, sans-serif; 
     text-transform: uppercase;
 }
 
@@ -39,5 +39,6 @@ h1 {
 
 p {
     font-size: 1.4rem;
+    color: $dark-color;
 }
 

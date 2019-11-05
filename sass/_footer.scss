@@ -1,0 +1,32 @@
+// FOOTER
+#main-footer {
+    background: $dark-color;
+    padding: 0.10px 0;
+
+    i {
+        color: darken($color: #fff, $amount: 20);
+        margin-left: 0.75rem;
+        transition: color 0.5s ease-in-out;
+    }
+
+    i:hover {
+        color: $highlight-color;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem auto;
+
+        p {
+            color: darken($color: #fff, $amount: 20) ;
+
+            span {
+                color: $highlight-color;
+            }
+        }
+
+    }
+
+}
