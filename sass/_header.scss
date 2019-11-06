@@ -99,38 +99,3 @@ h1#logo-text {
     }
 }
 
-#about-section {
-    background: $dark-color;
-    color: #fff;
-
-    .about-me {
-        display: grid;
-        grid-template-columns: 1.4fr 2fr;
-        min-height: 100vh;
-
-        .about-photo {
-            padding: 1rem;
-            background: url("../img/face.jpg") no-repeat center center/cover;
-        }
-
-        .about-content {
-            margin-top: 56px;
-            background: lighten($main-color, 35);
-            padding: 1rem;
-
-            h1 {
-                display: inline-block;
-                line-height: 1.2;
-                color: $main-color;
-                border-bottom: 10px solid $highlight-color;
-            }
-        }
-
-    }
-}
-
-#technical-section {
-    background: $main-background;
-    height: 100vh;
-}
-

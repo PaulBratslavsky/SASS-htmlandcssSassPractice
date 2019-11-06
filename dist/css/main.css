@@ -78,6 +78,11 @@ p {
   .btn-light:hover {
     background-color: #d9d9d9; }
 
+.section-title {
+  display: inline-block;
+  font-size: 2rem;
+  border-bottom: 4px #E94C88 solid; }
+
 .lead {
   font-size: 1.8rem;
   margin: 3rem; }
@@ -126,6 +131,18 @@ p {
 
 .center-text {
   text-align: center; }
+
+.progress {
+  overflow: hidden;
+  height: 30px;
+  background: #333333;
+  border: 2px #f4f4f4 solid;
+  border-radius: 4px;
+  margin-bottom: 0.5rem; }
+  .progress div {
+    height: 100%;
+    color: white;
+    background: #f39e02; }
 
 #main-nav {
   position: fixed;
@@ -194,36 +211,8 @@ h1#logo-text {
         font-size: 2rem;
         color: #ffffff; }
 
-#about-section {
-  background: #333333;
-  color: #fff; }
-  #about-section .about-me {
-    display: grid;
-    grid-template-columns: 1.4fr 2fr;
-    min-height: 100vh; }
-    #about-section .about-me .about-photo {
-      padding: 1rem;
-      background: url("../img/face.jpg") no-repeat center center/cover; }
-    #about-section .about-me .about-content {
-      margin-top: 56px;
-      background: #eef3fa;
-      padding: 1rem; }
-      #about-section .about-me .about-content h1 {
-        display: inline-block;
-        line-height: 1.2;
-        color: #6393D2;
-        border-bottom: 10px solid #E94C88; }
-
-#technical-section {
-  background: #ffffff;
-  height: 100vh; }
-
 #home-a {
   min-height: 100vh; }
-  #home-a .section-title {
-    display: inline-block;
-    font-size: 2rem;
-    border-bottom: 4px #E94C88 solid; }
   #home-a .specials {
     display: grid;
     grid-template-columns: repeat(4, 1fr); }
@@ -304,8 +293,78 @@ h1#logo-text {
         font-size: 2rem;
         font-weight: bold; }
 
-#main-footer {
+#about-section .about-me {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 1fr 1.4fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 'image about' 'image stats';
+  min-height: 100vh; }
+  #about-section .about-me .about-photo {
+    grid-area: image; }
+  #about-section .about-me .about-content {
+    grid-area: about; }
+  #about-section .about-me .about-stats {
+    grid-area: stats; }
+  #about-section .about-me .about-photo {
+    padding: 1rem;
+    background: url("../img/face.jpg") no-repeat center center/cover; }
+  #about-section .about-me .about-content {
+    margin-top: 56px;
+    background: #eef3fa;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    #about-section .about-me .about-content h1 {
+      width: 205px;
+      display: inline-block;
+      line-height: 1.2;
+      color: #6393D2;
+      border-bottom: 10px solid #ec5e93; }
+    #about-section .about-me .about-content p {
+      margin: 1rem 0;
+      font-size: 1.8rem; }
+  #about-section .about-me .about-stats {
+    padding: 1rem;
+    background: #333333;
+    color: #ffffff; }
+    #about-section .about-me .about-stats h2 {
+      display: inline-block;
+      font-size: 2.4rem;
+      line-height: 1.2;
+      color: #f39e02; }
+    #about-section .about-me .about-stats h4 {
+      font-size: 1.4rem; }
+    #about-section .about-me .about-stats p {
+      color: #f4f4f4;
+      margin-bottom: 0.5rem; }
+
+#logos-section {
   background: #333333;
+  padding: 1rem 0; }
+  #logos-section .logos {
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-columns: repeat(4, 1fr); }
+
+#testimonials-section {
+  background: #fefefe;
+  text-align: center;
+  padding: 3rem 0; }
+  #testimonials-section .testimonials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); }
+    #testimonials-section .testimonials .testimonial-item {
+      background: red;
+      position: relative; }
+      #testimonials-section .testimonials .testimonial-item header {
+        position: absolute;
+        top: 1rem;
+        left: 1rem; }
+
+#main-footer {
+  background: #232323;
   padding: 0.10px 0; }
   #main-footer i {
     color: #cccccc;

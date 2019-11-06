@@ -1,0 +1,117 @@
+#about-section {
+
+    .about-me {
+        display: grid;
+        min-height: 100vh;
+
+        grid-template-columns: 1fr 1.4fr;
+        grid-template-rows: 1fr 1fr;
+
+        grid-template-areas: 
+            'image about'
+            'image stats'
+        ;
+
+        // Grid Area Init
+        .about-photo {
+            grid-area: image;
+        }
+
+        .about-content {
+            grid-area: about;
+        }
+
+        .about-stats {
+            grid-area: stats;
+        }
+
+        min-height: 100vh;
+
+        .about-photo {
+            padding: 1rem;
+            background: url("../img/face.jpg") no-repeat center center/cover;
+        }
+
+        .about-content {
+            margin-top: 56px;
+            background: lighten($main-color, 35);
+            padding: 1rem;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                width: 205px;
+                display: inline-block;
+                line-height: 1.2;
+                color: $main-color;
+                border-bottom: 10px solid #ec5e93;
+            }
+
+            p {
+                margin: 1rem 0;
+                font-size: 1.8rem;
+            }
+
+            
+        }
+
+        .about-stats {
+            padding: 1rem;
+            background: $dark-color;
+            color: $main-background;
+
+            h2 {
+                display: inline-block;
+                font-size: 2.4rem;
+                line-height: 1.2;
+                color: #f39e02;
+            }
+
+            h4 {
+                font-size: 1.4rem;
+            }
+
+            p {
+                color: #f4f4f4;
+                margin-bottom: 0.5rem;
+            }
+        }
+
+    }
+}
+
+#logos-section {
+    background: $dark-color;
+    padding: 1rem 0;
+    .logos {
+        display: grid;
+        grid-gap: 4rem;
+        grid-template-columns: repeat(4, 1fr) ;
+    }
+}
+
+#testimonials-section {
+    background: #fefefe;
+    text-align: center;
+
+    padding: 3rem 0;
+    
+    .testimonials {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr) ;
+
+        .testimonial-item {
+            background: red;
+            position: relative;
+
+            header {
+                position: absolute;
+                top: 1rem;
+                left: 1rem;
+            }
+        }
+    }
+}
+
