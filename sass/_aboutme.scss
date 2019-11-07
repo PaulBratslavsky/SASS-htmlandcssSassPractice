@@ -25,15 +25,13 @@
             grid-area: stats;
         }
 
-        min-height: 100vh;
-
         .about-photo {
             padding: 1rem;
             background: url("../img/face.jpg") no-repeat center center/cover;
         }
 
         .about-content {
-            margin-top: 56px;
+            margin-top: 59px;
             background: lighten($main-color, 35);
             padding: 1rem;
 
@@ -85,6 +83,7 @@
 #logos-section {
     background: $dark-color;
     padding: 1rem 0;
+
     .logos {
         display: grid;
         grid-gap: 4rem;
@@ -96,21 +95,35 @@
     background: #fefefe;
     text-align: center;
 
-    padding: 3rem 0;
+    padding: 3rem 0 0 0;
     
     .testimonials {
         display: grid;
         grid-template-columns: repeat(4, 1fr) ;
 
         .testimonial-item {
-            background: red;
-            position: relative;
-
             header {
-                position: absolute;
-                top: 1rem;
-                left: 1rem;
+
+                h2 {
+                    font-size: 2rem;
+                    background: #fefefe;
+                    color: #e94c87;
+                    line-height: 1;
+                    margin: 1.4rem 0 0.5rem 0;
+                    border-bottom: $main-color 3px solid;
+                    display: inline-block;
+                }
             }
+
+            .content {
+                padding: 0 1rem;
+                p {
+                    padding: 1rem;
+                }
+
+                margin-bottom: 1rem;
+            }
+
         }
     }
 }

@@ -1,0 +1,55 @@
+
+// NAVIGATION
+
+// Change Logo Size for Tablets
+h1#logo-text {
+    font-size: 1.6rem;
+}
+
+// HOME SECTIOM
+
+// Change Home Header Text Size
+#header-home .header-content h1 {
+    font-size: 3.8rem;
+}
+
+#header-home .header-content p {
+    font-size: 1.8rem;
+}
+
+// Change Special Columns to 2x2
+#home-a .specials {
+    grid-template-columns: repeat(2,1fr);
+}
+
+// Change Process Columns to 2x2
+#home-b .process {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+// ABOUT ME PAGE
+
+#about-section .about-me {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template-areas: 
+        'image image'
+        'about stats'
+    ;
+}
+
+#about-section .about-me .about-content  {
+    margin-top: 0;
+}
+
+// Testimonials
+
+#testimonials-section .testimonials {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+// CONTACT PAGE
+#contact .contact-info .info .info-item p {
+    font-size: 1.2rem;
+}

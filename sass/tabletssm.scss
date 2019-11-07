@@ -1,0 +1,73 @@
+
+// HOME 
+
+#header-home .header-content h1  {
+    font-size: 3rem;
+}
+
+#header-home .header-content p {
+    font-size: 1.6rem;
+}
+
+a.btn-highlight.text-md {
+    font-size: 1.8rem;
+}
+
+// NAVIGATION
+#main-nav ul li {
+    margin: 0 0.5rem;
+}
+
+// ABOUT 
+
+// Stack about me and skills
+#about-section .about-me {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        'image'
+        'about'
+        'stats';
+}
+
+#about-section .about-me .about-stats {
+    padding: 3rem 1rem;
+}
+
+// FOOTER 
+#main-footer .footer-content {
+    flex-direction: column;
+    margin: 1rem auto;
+
+    p, .social {
+        padding: 1rem;
+    }
+}
+
+// WORK SECTION 
+#work-section .items {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+// CONTACT ME
+#contact-section .text-fields {
+    display: grid;
+    grid-template-areas:
+        'name'
+        'email'
+        'subject'
+        'phone'
+        'message';
+}
+
+// CONTACT INFO
+
+#contact .contact-info {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+
+    div.photo {
+        width: 80%;
+    }
+
+}

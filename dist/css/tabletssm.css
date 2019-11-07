@@ -1,0 +1,38 @@
+#header-home .header-content h1 {
+  font-size: 3rem; }
+
+#header-home .header-content p {
+  font-size: 1.6rem; }
+
+a.btn-highlight.text-md {
+  font-size: 1.8rem; }
+
+#main-nav ul li {
+  margin: 0 0.5rem; }
+
+#about-section .about-me {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 'image' 'about' 'stats'; }
+
+#about-section .about-me .about-stats {
+  padding: 3rem 1rem; }
+
+#main-footer .footer-content {
+  flex-direction: column;
+  margin: 1rem auto; }
+  #main-footer .footer-content p, #main-footer .footer-content .social {
+    padding: 1rem; }
+
+#work-section .items {
+  grid-template-columns: repeat(2, 1fr); }
+
+#contact-section .text-fields {
+  display: grid;
+  grid-template-areas: 'name' 'email' 'subject' 'phone' 'message'; }
+
+#contact .contact-info {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr); }
+  #contact .contact-info div.photo {
+    width: 80%; }

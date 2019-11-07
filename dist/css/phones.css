@@ -1,0 +1,56 @@
+#header-home .header-content h1 {
+  font-size: 2rem; }
+
+#header-home .header-content p {
+  font-size: 1.2rem; }
+
+#header-home .header-content span .txt {
+  font-size: 1.4rem; }
+
+.btn-highlight.text-md {
+  font-size: 1.4rem; }
+
+a.btn-highlight.text-md {
+  font-size: 1.2rem; }
+
+@media (max-width: 515px) {
+  h1#logo-text {
+    font-size: 1rem; }
+  #main-nav ul li {
+    margin: 0 0.25rem;
+    font-size: 1rem; }
+  #home-a .specials,
+  #home-b .process,
+  #home-c .stats {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr); }
+  #home-c .stats {
+    margin: 0 auto; }
+  #home-c .stats div {
+    line-height: 1;
+    padding: 1rem;
+    margin: 0rem;
+    height: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  #main-footer .footer-content p {
+    color: #cccccc;
+    text-align: center;
+    font-size: 1rem; }
+  .lead {
+    margin: 0.5rem; }
+  #work-section .items {
+    grid-template-columns: 1fr; }
+  .section-title {
+    font-size: 1.3rem;
+    margin: 2rem 0; }
+  #testimonials-section .testimonials {
+    grid-template-columns: 1fr; }
+  #logos-section .logos {
+    grid-template-columns: repeat(2, 1fr); }
+  #contact-section,
+  #work-section {
+    padding-top: 0; }
+  #main-nav {
+    flex-direction: column; } }

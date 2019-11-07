@@ -1,0 +1,100 @@
+// WORK
+
+#work-section {
+    min-height: 100vh;
+    margin-top: 59px;
+    background: #EEF3FA;
+    text-align: center;
+
+    .items {
+        
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+
+        .item {
+            position: relative;
+            overflow: hidden;
+            background: $main-color;
+            box-shadow: 0 15px 10px 0 rgba(0,  0, 0, 0.3);
+
+            &::after {
+                content: '';
+                position: absolute;
+                display: block;
+                
+                top: 0;
+                left: 0;
+
+                height: 100%;
+                width: 100%;
+                z-index: 1;
+
+                background: inherit;
+                opacity: 0.9;
+
+                transform: scale(2) translateX(-75%) translateY(-75%) rotate(28deg);
+                transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
+
+            }
+
+            // Bring in main color overlay
+            &:hover:after {
+                transform: scale(2) translateX(0) translateY(0) rotate(28deg);
+            }
+
+            // Scale image on hover
+            .item-image {
+                display: block;
+                height: auto;
+                transition: transform 1s cubic-bezier(0.2, 1, 0.3, 1);
+            }
+
+            
+
+            &:hover .item-image {
+                transform: scale(1.2); 
+            }
+
+            .item-text {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                z-index: 2;
+                height: 100%;
+                width: 100%;
+                transform: translateY(+100%);
+                opacity: 0;
+
+                transition: all 1s ease-in-out;
+                transition-delay: 300ms;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                padding: 1rem;
+
+                h2 {
+                    font-size: 2rem;
+                    color: #fefefe;
+                    border-bottom: 4px solid orange;
+                    line-height: 1.2;
+                }
+
+                p {
+                    background: #fff;
+                    font-size: 1.6rem;
+                }
+
+            }
+
+            // Bring text on hover
+            &:hover .item-text {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+
+}

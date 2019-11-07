@@ -1,0 +1,28 @@
+h1#logo-text {
+  font-size: 1.6rem; }
+
+#header-home .header-content h1 {
+  font-size: 3.8rem; }
+
+#header-home .header-content p {
+  font-size: 1.8rem; }
+
+#home-a .specials {
+  grid-template-columns: repeat(2, 1fr); }
+
+#home-b .process {
+  grid-template-columns: repeat(2, 1fr); }
+
+#about-section .about-me {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 'image image' 'about stats'; }
+
+#about-section .about-me .about-content {
+  margin-top: 0; }
+
+#testimonials-section .testimonials {
+  grid-template-columns: repeat(2, 1fr); }
+
+#contact .contact-info .info .info-item p {
+  font-size: 1.2rem; }
