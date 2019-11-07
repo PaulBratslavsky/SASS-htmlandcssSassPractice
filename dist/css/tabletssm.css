@@ -8,7 +8,8 @@ a.btn-highlight.text-md {
   font-size: 1.8rem; }
 
 #main-nav ul li {
-  margin: 0 0.5rem; }
+  margin: 0 0.5rem;
+  font-size: 1.2rem; }
 
 #about-section .about-me {
   grid-template-columns: 1fr;

@@ -15,10 +15,10 @@ a.btn-highlight.text-md {
 
 @media (max-width: 515px) {
   h1#logo-text {
-    font-size: 1rem; }
+    font-size: 1.4rem; }
   #main-nav ul li {
-    margin: 0 0.25rem;
-    font-size: 1rem; }
+    margin: 0 0.5rem;
+    font-size: 1.2rem; }
   #home-a .specials,
   #home-b .process,
   #home-c .stats {
@@ -53,4 +53,6 @@ a.btn-highlight.text-md {
   #work-section {
     padding-top: 0; }
   #main-nav {
-    flex-direction: column; } }
+    flex-direction: column;
+    height: 69px;
+    justify-content: flex-start; } }

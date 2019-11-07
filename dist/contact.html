@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="css/tablets.css" media="screen and (max-width: 800px)">
     <link rel="stylesheet" href="css/tabletssm.css" media="screen and (max-width: 667px)">
-    <link rel="stylesheet" href="css/phones.css" media="screen and (max-width: 568px)">
+    <link rel="stylesheet" href="css/phones.css" media="screen and (max-width: 580px)">
 
 
     <script src="https://kit.fontawesome.com/b439301c53.js" crossorigin="anonymous" defer></script>
@@ -35,13 +35,16 @@
         <div class="container">
             <h2 class="section-title">Contact Me</h2>
             <p>Here is how you can reach me.</p>
-            <form>
+            <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
                 <div class="text-fields">
-                    <input type="text" placeholder="Name" class="text-input name-input">
-                    <input type="text" placeholder="Subject" class="text-input subject-input">
-                    <input type="email" placeholder="Email" class="text-input email-input">
-                    <input type="text" placeholder="Phone" class="text-input phone-input">
-                    <textarea placeholder="Enter Message" class="text-input message-input"></textarea>
+                    <input type="text" placeholder="Name" class="text-input name-input" name="name">
+                    <input type="text" placeholder="Subject" class="text-input subject-input" name="subject">
+                    <input type="email" placeholder="Email" class="text-input email-input" name="email">
+                    <input type="text" placeholder="Phone" class="text-input phone-input" name="phone">
+                    <textarea placeholder="Enter Message" class="text-input message-input" name="message"></textarea>
+                    <div class="my-2">
+                        <div data-netlify-recaptcha="true"></div>
+                    </div>
                 </div>
                 <button type="submit" class="btn-dark">Submit</button>
             </form>
